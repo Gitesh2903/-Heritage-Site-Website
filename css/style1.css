@@ -1,0 +1,116 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato' , sans-serif;
+	font-size: 16px;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../bg3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	
+	
+}
+.nav{
+	width: 100%;
+	height: 69px;
+	background-color: #262626;
+	
+	
+}
+.menu{
+	line-height: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+.nav .menu .menu_item {
+	display: inline-block;
+	position: relative;
+	
+}
+.nav .menu .menu_item a{
+	padding:12px 24px;
+	cursor: pointer;
+	text-decoration:none;
+	color:#fff;
+	display: block;
+	
+}
+.submenu{
+	text-transform: none;
+	display: none;
+	position: absolute;
+	width: auto;
+	background-color: rgba(0,0,0,0.8);
+	transition: 0.4s;
+	
+}
+
+.menu_item:hover .submenu{
+	display: block;
+	border-left: 4px solid rgba(450,0,060,0.8)
+
+	
+}
+.submenu_item{
+	border-left: 4px solid transparent;
+}
+.submenu_item:hover{
+	background-color: rgba(0,0,0,0.6);
+	border-left: 4px solid rgba (450,0,60,0.8);
+	
+}
+.nav .search{
+	float:right;
+	position:absolute;
+	top:1%;
+	left:70%;
+	transform; translate(-50%,-50%);
+	
+	
+}
+
+.nav input[type=text]{
+	padding: 8px;
+	margin-top: 8px;
+	border: none;
+	font-size: 15px;
+}
+
+.nav .search button{
+	float: right;
+	padding: 8px;
+	margin-top: 8px;
+	margin-right: 10px;
+	border: none;
+	font-size: 15px;
+	background-color: #ddd;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.nav .search button:hover{
+	background-color: dodgerblue;
+	color: #fff;
+	
+}
+.nav .title{
+	float:right;
+	position:absolute;
+	top:35%;
+	left:25%;
+	transform; translate(-50%,-50%);
+	font-size: 30px;
+	border: none;
+	
+}
+ul li.menu_item:hover{
+	background-color: #ff0000;
+	color: #000;
+}
